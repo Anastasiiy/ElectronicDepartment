@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ElectronicDepartment.DomainEntities
 {
-    public class ApplizationUser : IdentityUser
+    public class ApplicationUser : IdentityUser
     {
         [Required]
         [MaxLength(128)]
@@ -21,5 +21,11 @@ namespace ElectronicDepartment.DomainEntities
         public DateTime BirthDay { get; set; }
 
         public Gender Gender { get; set; }
+
+        public UserType UserType { get; set; }
+
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+
+        public DateTime DeletedAt { get; set; } = DateTime.MinValue;
     }
 }

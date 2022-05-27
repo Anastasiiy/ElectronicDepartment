@@ -9,7 +9,5 @@ namespace ElectronicDepartment.DomainEntities
         public string Name { get; set; } = default!;
 
         public virtual List<Student> Students { get; set; } = new List<Student>();
-        
-        public virtual List<Lesson> Lessons { get; set; } = new List<Lesson>();
     }
 }
