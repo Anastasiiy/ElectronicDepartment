@@ -8,10 +8,10 @@ namespace ElectronicDepartment.DomainEntities
 
         public virtual Course Course { get; set; } = default!;
 
-        public int TeacherId { get; set; }
+        public string TeacherId { get; set; }
 
         public virtual Teacher Teacher { get; set; } = default!;
 
-        public CourseTeacherFlag CourseTeacherFlag { get; set; }
+        public virtual List<Lesson> Lessons { get; set; } = new List<Lesson>();
     }
 }
