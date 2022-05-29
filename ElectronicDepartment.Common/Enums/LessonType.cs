@@ -4,7 +4,7 @@
     {
         None = 0,
         Lecture = 1,
-        Pactic = 2,
+        Practic = 2,
         Lab = 4,
         Exam = 5
     }
